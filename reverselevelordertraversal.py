@@ -13,7 +13,7 @@ def reverseTraversal(root):
     reverseStack=deque()
     stack.append(root)
     while stack:
-        res=stack.poplefte()
+        res=stack.popleft()
         reverseStack.append(res)
         if res.right:
             stack.append(res.right)
